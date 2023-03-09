@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 if __name__ == '__main__':
     import sys
-    l = sys.argv
-    size = len(l) - 1
-    ar = "argument" if size is 1 else "arguments"
-    dot = "." if size is 0 else ":"
-    print("{} {}".format(size, ar + dot))
-    for i in range(1, size + 1):
-        print("{}: {}".format(i, l[i]))
+    num_args = len(sys.argv) - 1
+    if num_args == 0:
+        print("Number of argument(s): 0.")
+        print(".")
+    else:
+        print("Number of argument(s): {}.".format(num_args))
+        print("Argument{}:".format("" if num_args == 1 else "s"))
+        for i in range(num_args):
+            print("{}: {}".format(i+1, sys.argv[i+1]))
