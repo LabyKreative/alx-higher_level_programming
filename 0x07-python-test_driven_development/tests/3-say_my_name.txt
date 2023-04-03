@@ -1,0 +1,27 @@
+Test for ``say_my_name`` function
+=================================
+
+Import function ``say_my_name``
+---------------------------------
+
+This is an test file, for say_my_name function:
+
+Test 1 - check import ok:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test say_my_name:
+------------------
+
+  >>> say_my_name("Camilo")
+	My name is Camilo
+
+	>>> say_my_name([])
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name({})
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name("")
+	My name is
