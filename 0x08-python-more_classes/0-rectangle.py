@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+'''Defines a Recangle class'''
+
+
 class Rectangle:
-    """
+    '''
     The Rectangle class represents a rectangle object.
 
     Attributes:
@@ -10,5 +13,5 @@ class Rectangle:
     Methods:
         area(): Returns the area of the rectangle.
         perimeter(): Returns the perimeter of the rectangle.
-    """
+    '''
     pass
