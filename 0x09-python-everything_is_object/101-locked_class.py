@@ -1,3 +1,8 @@
 #!/usr/bin/python3
+"""Defines a Locked class"""
+
+
 class LockedCLass:
-    __slot__ = "first_name"
+    """This stops the user from instantiating new LockedClass"""
+
+    __slot__ = ["first_name"]
