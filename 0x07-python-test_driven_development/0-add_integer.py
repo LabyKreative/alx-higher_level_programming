@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     '''Returns the addition of a and b
-    and also he result int datatype.
+    and also the result int datatype.
     Raise TypeError if data is diferrent that int.
     '''
     if ((not isinstance(a, int) and not isinstance(a, float))):
