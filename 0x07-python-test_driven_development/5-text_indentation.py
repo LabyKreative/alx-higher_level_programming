@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a text-indentation function"""
+"""Defines a text indentation function"""
 
 
 def text_indentation(text):
