@@ -114,8 +114,8 @@ class Base:
             for i in range(2):
                 gui.fd(rect.width)
                 gui.lt(90)
-                turt.fd(rect.height)
-                turt.lt(90)
+                gui.fd(rect.height)
+                gui.lt(90)
             gui.hideturtle()
 
         gui.color("#045cba")
