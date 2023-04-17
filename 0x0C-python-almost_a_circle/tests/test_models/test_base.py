@@ -10,16 +10,15 @@ Unittest classes:
     TestBase_save_to_file_csv - line 404
     TestBase_load_from_file_csv - line 482
 """
-import os
 import unittest
+import os
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
 
 class TestBase_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Base class."""
-
+    """Unittests for testing instantiation of the Base class"""
     def test_no_arg(self):
         b1 = Base()
         b2 = Base()
