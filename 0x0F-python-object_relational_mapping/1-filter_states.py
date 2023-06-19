@@ -7,12 +7,11 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
-
-    # Connect to MySQL server
-    db = MySQLdb.connect(user=username, passwd=password, db=database, port=3306)
+        db = MySQLdb.connect(
+    user=sys.argv[1],
+    passwd=sys.argv[2],
+    db=sys.argv[3],
+     port=3306)
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
