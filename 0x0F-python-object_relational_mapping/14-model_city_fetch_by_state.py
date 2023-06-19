@@ -21,7 +21,5 @@ if __name__ == '__main__':
 
     query = session.query(State, City).join(City, State.id == City.state_id).all()
 
-    states = session.query(State).filter(State.name.like('%a%')).all()
-
     for state, city in query:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
