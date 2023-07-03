@@ -5,11 +5,13 @@ import sys
 import requests
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     url = sys.argv[1]
 
     req = requests.get(url)
-    if req.status_code >= 400:
-        print("Error code: {}".format(req.status_code))
+    error_code = req.status_code
+
+    if error_code >= 400:
+        print(f'Error code: {error_code}')
     else:
         print(req.text)
