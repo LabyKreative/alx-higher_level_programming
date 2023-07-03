@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """a script that takes in a URL, sends a request to same
 and displays the body of the response."""
 import sys
