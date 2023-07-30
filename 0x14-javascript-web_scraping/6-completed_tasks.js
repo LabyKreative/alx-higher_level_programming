@@ -15,8 +15,7 @@ request(process.argv[2], function (error, response, body) {
         }
       }
     });
-    const formattedOutput = JSON.stringify(completedTask, null, 2);
-    console.log(formattedOutput);
+    console.log(completedTask);
   } else {
     console.error('Error: Unable to fetch data from the API.');
   }
